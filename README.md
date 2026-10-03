@@ -1,6 +1,8 @@
-## FIPS-197 AES + SP 800-38D GCM from scratch in Java; streaming AES-256-GCM file CLI with PBKDF2/HKDF
+# Rijn
 
-Authenticated file encryption (AES-256-GCM) with a from-scratch AES and GCM implementation that is verified byte-for-byte against the official test vectors and the JDK.
+Streaming file encryption in Java, with AES-GCM built from scratch and a hardware-accelerated default engine.
+
+**Rijn** provides authenticated file encryption (AES-256-GCM) with a from-scratch AES and GCM implementation that is verified byte-for-byte against the official test vectors and the JDK.
 
 The project has two halves that share one interface:
 
@@ -33,7 +35,7 @@ decrypted taxes-2025.pdf.aesf -> taxes-2025.pdf
 
 ## Quick start
 
-Requires Java 17 or newer and Maven.
+Requires Java 17 or newer and Maven. Rijn uses the `aesf` command and `.aesf` file format.
 
 ```bash
 mvn -B verify                    # compile and run the test suite
